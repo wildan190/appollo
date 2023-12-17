@@ -22,8 +22,9 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-6">
 
                 <!-- Bagian 1: Informasi Personil -->
-                <form action="{{ route('data_tenders.store') }}" method="POST">
+                <form action="{{ route('data_tenders.update', $dataTender->id) }}" method="POST">
                     @csrf
+                    @method('PUT')
                     <div class="mb-4">
                         <h3 class="text-lg font-medium text-gray-700 dark:text-gray-300 mb-4">Informasi Personil</h3>
 
