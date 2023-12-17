@@ -27,6 +27,9 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Cek Data Personil') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                        {{ __('File Upload') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -153,6 +156,21 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('pokjas.index') }}" :active="request()->routeIs('pokjas.index')">
+                {{ __('Pokja') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('kode_pokjas.index') }}" :active="request()->routeIs('kode_pokjas.index')">
+                {{ __('Kode Pokja') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('data_tenders.index') }}" :active="request()->routeIs('data_tenders.index')">
+                {{ __('Data Tender') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                {{ __('Data Personil') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                {{ __('File Upload') }}
             </x-responsive-nav-link>
         </div>
 
