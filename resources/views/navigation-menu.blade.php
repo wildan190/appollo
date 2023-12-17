@@ -15,6 +15,18 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('pokjas.index') }}" :active="request()->routeIs('pokjas.index')">
+                        {{ __('Pokja') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('kode_pokjas.index') }}" :active="request()->routeIs('kode_pokjas.index')">
+                        {{ __('Kode Pokja') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('data_tenders.index') }}" :active="request()->routeIs('data_tenders.index')">
+                        {{ __('Data Tender') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                        {{ __('Cek Data Personil') }}
+                    </x-nav-link>
                 </div>
             </div>
 
