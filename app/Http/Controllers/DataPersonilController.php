@@ -5,6 +5,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\DataPersonil;
+use App\Models\DataTender;
+use App\Models\KodePokja;
+use App\Models\Pokja;
 use Illuminate\Http\Request;
 
 class DataPersonilController extends Controller
@@ -17,7 +20,8 @@ class DataPersonilController extends Controller
 
     public function create()
     {
-        return view('data_personils.create');
+        $dataTenders = DataTender::all();
+        return view('data_personils.create', compact('dataTenders'));
     }
 
     public function store(Request $request)
@@ -63,6 +67,19 @@ class DataPersonilController extends Controller
             'nik1' => 'required|string',
             'npwp1' => 'required|string',
             'kd_tender' => 'required|string',
+            'nama_paket' => 'required|string',
+            'kd_pokja' => 'required|string',
+            'pagu' => 'required|numeric',
+            'hps' => 'required|numeric',
+            'satuan_kerja' => 'required|string',
+            'ppk' => 'required|string',
+            'nama_instansi' => 'required|string',
+            'nilai_penawaran' => 'required|numeric',
+            'tanggal_penetapan' => 'required|date',
+            'nilai_kontrak' => 'required|numeric',
+            'tanggal_kontrak' => 'required|date',
+            'waktu_pelaksanaan' => 'required|string',
+            'tahun' => 'required|string',
         ];
     }
 }

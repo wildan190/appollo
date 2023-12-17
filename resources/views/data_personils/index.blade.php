@@ -27,13 +27,13 @@
                         <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
                             <thead class="bg-gray-50 dark:bg-gray-800">
                                 <tr>
-                                    <th class="py-2 px-4">Nama Personil</th>
-                                    <th class="py-2 px-4">Jabatan</th>
-                                    <th class="py-2 px-4">NIK</th>
-                                    <th class="py-2 px-4">NPWP</th>
-                                    <th class="py-2 px-4">Perusahaan</th>
-                                    <th class="py-2 px-4">Status</th>
-                                    <th class="py-2 px-4">Opsi</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nama Personil</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Jabatan</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">NIK</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">NPWP</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Perusahaan</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Opsi</th>
                                 </tr>
                             </thead>
                             <tbody>
