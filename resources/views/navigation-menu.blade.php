@@ -24,7 +24,7 @@
                     <x-nav-link href="{{ route('data_tenders.index') }}" :active="request()->routeIs('data_tenders.index')">
                         {{ __('Data Tender') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                    <x-nav-link href="{{ route('data_personils.index') }}" :active="request()->routeIs('data_personils.index')">
                         {{ __('Cek Data Personil') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
@@ -166,7 +166,7 @@
             <x-responsive-nav-link href="{{ route('data_tenders.index') }}" :active="request()->routeIs('data_tenders.index')">
                 {{ __('Data Tender') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+            <x-responsive-nav-link href="{{ route('data_personils.index') }}" :active="request()->routeIs('data_personils.index')">
                 {{ __('Data Personil') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
