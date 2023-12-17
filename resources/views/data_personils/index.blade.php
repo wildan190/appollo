@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-x-auto overflow-y-hidden shadow-xl sm:rounded-lg p-6">
                 <div class="flex justify-between items-center mb-6">
-                    <h3 class="text-lg font-semibold">Daftar Data Personil</h3>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white leading-tight">Daftar Data Personil</h3>
                     <a href="{{ route('data_personils.create') }}" class="px-4 py-2 bg-blue-500 text-white rounded-md">Tambah Data Tender</a>
                 </div>
 

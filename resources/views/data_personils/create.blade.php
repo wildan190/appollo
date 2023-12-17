@@ -11,6 +11,28 @@
                 <form action="{{ route('data_tenders.store') }}" method="POST" id="tenderForm">
                     @csrf
 
+                        <h3 class="text-lg font-semibold mb-2">Informasi Personil</h3>
+
+                        <div class="mb-4">
+                            <label for="nama_personil1" class="block text-sm font-medium text-gray-600 dark:text-gray-300">Nama Personil 1</label>
+                            <input type="text" name="nama_personil1" id="nama_personil1" class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300" placeholder="Masukkan Nama Personil 1" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="jabatan1" class="block text-sm font-medium text-gray-600 dark:text-gray-300">Jabatan 1</label>
+                            <input type="text" name="jabatan1" id="jabatan1" class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300" placeholder="Masukkan Jabatan 1" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="nik1" class="block text-sm font-medium text-gray-600 dark:text-gray-300">NIK 1</label>
+                            <input type="text" name="nik1" id="nik1" class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300" placeholder="Masukkan NIK 1" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="npwp1" class="block text-sm font-medium text-gray-600 dark:text-gray-300">NPWP 1</label>
+                            <input type="text" name="npwp1" id="npwp1" class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300" placeholder="Masukkan NPWP 1" required>
+                        </div>
+
                     <!-- Informasi Tender -->
                     <div class="mb-4">
                         <label for="kd_tender" class="block text-sm font-medium text-gray-600 dark:text-gray-300">Kode Tender</label>
@@ -22,8 +44,12 @@
                         </select>
                     </div>
 
+                    <!-- Pembatas -->
+                    <hr class="my-6 border-2 rounded-full border-gray-300 dark:border-gray-700">
+                    
                     <!-- Form input lainnya -->
                     <div id="additionalInputs" style="display: none;">
+                    <h3 class="text-lg font-semibold mb-2">Informasi Paket</h3>
                         <div class="mb-4">
                             <label for="nama_paket" class="block text-sm font-medium text-gray-600 dark:text-gray-300">Nama Paket</label>
                             <input type="text" disabled value="{{ $dataTender->nama_paket }}" name="nama_paket" id="nama_paket" class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300" placeholder="Masukkan Nama Paket" required>
@@ -123,7 +149,7 @@
                 // Mengisi nilai form input lainnya sesuai kebutuhan
             } else {
                 additionalInputs.style.display = 'none'; // Menyembunyikan form jika kd_tender tidak terpilih
-            }
+            };
         }
     </script>
 </x-app-layout>

@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-xl sm:rounded-lg p-6">
                 <div class="flex justify-between items-center mb-6">
-                    <h3 class="text-lg font-semibold">Daftar Kode Pokja</h3>
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-white leading-tight">Daftar Kode Pokja</h3>
                     <a href="{{ route('kode_pokjas.create') }}" class="px-4 py-2 bg-blue-500 text-white rounded-md">Tambah Kode Pokja</a>
                 </div>
 
